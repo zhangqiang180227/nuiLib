@@ -9,5 +9,4 @@ class NuiUtil {
     fun getName(): String{
         return "洗洗睡吧"
     }
-
 }

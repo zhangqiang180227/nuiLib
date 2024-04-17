@@ -2,7 +2,10 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
+//    id 'com.github.dcendents.android-maven'
+
 }
+
 
 android {
     namespace 'com.me.nuilib'
@@ -31,6 +34,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
 }
 
 dependencies {
@@ -48,9 +52,9 @@ afterEvaluate {
         publications {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
-//                from components.release
+//                from components.release//components.name //SoftwareComponent
                 groupId = 'com.me.nuilib'
-                artifactId = 'nui'
+                artifactId = 'nuilib'
                 version = '1.0'
             }
         }
